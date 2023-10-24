@@ -22,7 +22,7 @@ manifest:
     # The following projects revision needs to be consistent of the west.yml in zephyr remote project
   
     - name: hal_linkedsemi
-      url: http://10.10.20.8:8000/sw/ls_sdk.git
+      url: https://github.com/linkedsemi/LS_SDK.git
       revision: zephyr
       path: modules/hal/linkedsemi
       groups:
