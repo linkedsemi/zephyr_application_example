@@ -46,7 +46,7 @@ command:
 
 ```shell
 # initialize my-workspace for the example-application (main branch)
-west init -m https://github.com/linkedsemi/example-application-linkedsemi --mr main my-workspace
+west init -m https://github.com/linkedsemi/zephyr_application_example --mr main my-workspace
 # update Zephyr modules
 cd my-workspace
 west update
