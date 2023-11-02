@@ -1,8 +1,29 @@
 # Copyright (c) 2021 Nordic Semiconductor ASA
 # SPDX-License-Identifier: Apache-2.0
 
-config BOARD_ENABLE_DCDC
-	bool "Enable DCDC mode"
-	select SOC_DCDC_NRF52X
-	default y
+config FLASH_LOAD_OFFSET
+	default 0x26000
 	depends on BOARD_CUSTOM_PLANK
+
+config HEAP_MEM_POOL_SIZE
+	default 4096
+
+config BT
+	default y
+
+config BT_CTLR
+	default n
+
+config BT_HCI_ACL_FLOW_CONTROL
+    default n
+
+config BT_HAS_HCI_VS
+    default y
+
+choice BT_HCI_BUS_TYPE
+	default BT_LE501X
+	depends on BT
+endchoice
+
+config BT_COMPANY_ID
+	default 0x093A

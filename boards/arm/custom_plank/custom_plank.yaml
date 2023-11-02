@@ -5,8 +5,8 @@ identifier: custom_plank
 name: Custom-Plank
 type: mcu
 arch: arm
-ram: 256
-flash: 1024
+ram: 48
+flash: 512
 toolchain:
   - zephyr
   - gnuarmemb
